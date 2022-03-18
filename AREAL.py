@@ -1,6 +1,6 @@
 import os
 
-# Funksjon for å tømme terminalen test test test test
+# Funksjon for å tømme terminalen
 def clear():
     os.system('cls')
 
@@ -58,19 +58,19 @@ while ans != "8":
     clear()
     skriv_meny()
     
-    ans=input("Hva ønsker du å gjøre. Velg tall? ") 
+    ans=input("> ") 
     if ans=="1":
         clear()
         print("\nHer bergnes arealet av et kvadrat")
-        venter=input("Trykk ENTER for å fortsette!")    
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="2":
         clear()
         print("\nHer bergnes arealet av et rektangel")
-        venter=input("Trykk ENTER for å fortsette!") 
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="3":
         clear()
-        print("\nHer bergnes arealet av en trekant") 
-        venter=input("Trykk ENTER for å fortsette!") 
+        print("\nHer bergnes arealet av en trekant")
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="4":
         clear()
         print("\nHer bergnes arealet av et parallellogram")
@@ -78,15 +78,14 @@ while ans != "8":
     elif ans=="5":
         clear()
         print("\nHer bergnes arealet av en rombe")
-        venter=input("Trykk ENTER for å fortsette!") 
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="6":
         clear()
         print("\nHer bergnes arealet av en trapes")
-        venter=input("Trykk ENTER for å fortsette!")         
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
-        venter=input("Trykk ENTER for å fortsette!") 
+        venter=input("Trykk ENTER for å fortsette!")
     
-print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")          
-
+print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")
