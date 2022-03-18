@@ -21,15 +21,22 @@ def skriv_meny():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 def kvadratareal():
-    s_input = int(input("Oppgi lengde/høyde på kvadrat."))
+    s_input = int(input("Oppgi side på kvadrat: "))
 
     kvadratareal_regning = s_input * s_input
 
-    print(f"Svaret er {kvadratareal_regning}")
+    print(f"Svaret er {kvadratareal_regning} cm2")
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def rektangelareal():
+    g_input = int(input("Oppgi lengde på kvadrat: "))
+    h_input = int(input("Oppgi høyde på kvadrat: "))
+
+    rektangelareal_regning = g_input * h_input
+
+    print(f"Svaret er {rektangelareal_regning} cm2")
 
 # Funksjon for å beregne arealet av en trekant skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
