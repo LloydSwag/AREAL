@@ -89,5 +89,4 @@ while ans != "8":
         venter=input("Trykk ENTER for å fortsette!") 
     
 print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")          
-    
-        
+
