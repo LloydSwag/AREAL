@@ -41,12 +41,24 @@ def rektangelareal():
 # Funksjon for å beregne arealet av en trekant skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def trekantareal():
+    g_input = int(input("Oppgi lengde på trekant: "))
+    h_input = int(input("Oppgi høyde på trekant: "))
 
+    trekantareal_regning = g_input * h_input
+
+    print(f"Svaret er {trekantareal_regning/2} cm2")
 
 # Funksjon for å beregne arealet av et parallellogram skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def parallellogramareal():
+    g_input = int(input("Oppgi lengde på parallellogram: "))
+    h_input = int(input("Oppgi høyde på parallellogram: "))
 
+    parallellogramareal_regning = g_input * h_input
+
+    print(f"Svaret er {parallellogramareal_regning} cm2")
 
 # Funksjon for å beregne arealet av en rombe skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
@@ -81,14 +93,20 @@ while ans != "8":
         clear()
         print("\nHer bergnes arealet av et rektangel")
         venter=input("Trykk ENTER for å fortsette!")
+        rektangelareal()
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="3":
         clear()
         print("\nHer bergnes arealet av en trekant")
         venter=input("Trykk ENTER for å fortsette!")
+        trekantareal()
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="4":
         clear()
         print("\nHer bergnes arealet av et parallellogram")
-        venter=input("Trykk ENTER for å fortsette!") 
+        venter=input("Trykk ENTER for å fortsette!")
+        parallellogramareal()
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="5":
         clear()
         print("\nHer bergnes arealet av en rombe")
