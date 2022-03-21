@@ -20,7 +20,7 @@ def skriv_meny():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 def kvadratareal():
-    s_input = int(input("Oppgi side på kvadrat: "))
+    s_input = float(input("Oppgi side på kvadrat: "))
 
     kvadratareal_regning = s_input * s_input
 
@@ -30,8 +30,8 @@ def kvadratareal():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 def rektangelareal():
-    g_input = int(input("Oppgi lengde på kvadrat: "))
-    h_input = int(input("Oppgi høyde på kvadrat: "))
+    g_input = float(input("Oppgi lengde på kvadrat: "))
+    h_input = float(input("Oppgi høyde på kvadrat: "))
 
     rektangelareal_regning = g_input * h_input
 
@@ -41,8 +41,8 @@ def rektangelareal():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 def trekantareal():
-    g_input = int(input("Oppgi lengde på trekant: "))
-    h_input = int(input("Oppgi høyde på trekant: "))
+    g_input = float(input("Oppgi lengde på trekant: "))
+    h_input = float(input("Oppgi høyde på trekant: "))
 
     trekantareal_regning = g_input * h_input
 
@@ -52,8 +52,8 @@ def trekantareal():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 def parallellogramareal():
-    g_input = int(input("Oppgi lengde på parallellogram: "))
-    h_input = int(input("Oppgi høyde på parallellogram: "))
+    g_input = float(input("Oppgi lengde på parallellogram: "))
+    h_input = float(input("Oppgi høyde på parallellogram: "))
 
     parallellogramareal_regning = g_input * h_input
 
@@ -63,8 +63,8 @@ def parallellogramareal():
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 def rombe_areal():
-    g_input = int(input("Oppgi grunnlinjen i romben"))
-    h_input = int(input("Oppgi høyden i romben"))
+    g_input = float(input("Oppgi grunnlinjen i romben"))
+    h_input = float(input("Oppgi høyden i romben"))
 
     rombeareal_regning =  g_input * h_input
 
