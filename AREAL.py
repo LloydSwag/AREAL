@@ -1,5 +1,5 @@
 import os
-
+import math as m
 # Funksjon for å tømme terminalen
 def clear():
     os.system('cls')
@@ -20,23 +20,12 @@ def skriv_meny():
 # Funksjon for å beregne arealet av et kvadrat skrives her. Funsjonen skal ta imot et parameter (s)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
-def kvadratareal():
-    s_input = int(input("Oppgi side på kvadrat: "))
 
-    kvadratareal_regning = s_input * s_input
-
-    print(f"Svaret er {kvadratareal_regning} cm2")
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
-def rektangelareal():
-    g_input = int(input("Oppgi lengde på kvadrat: "))
-    h_input = int(input("Oppgi høyde på kvadrat: "))
 
-    rektangelareal_regning = g_input * h_input
-
-    print(f"Svaret er {rektangelareal_regning} cm2")
 
 # Funksjon for å beregne arealet av en trekant skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
@@ -52,23 +41,35 @@ def rektangelareal():
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 def rombe_areal():
-    g_input = int(input("Oppgi grunnlinjen i romben"))
-    h_input = int(input("Oppgi høyden i romben"))
+    g_input = float(input("Oppgi grunnlinje i romben: "))
+    h_input = float(input("Oppgi høyde i romben: "))
 
     rombeareal_regning =  g_input * h_input
 
-    print(f"svaret er {rombeareal_regning}cm^2")
+    print(f"Svaret er {rombeareal_regning}cm^2")
 
 # Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
+def trapes_areal():
+    a_input = float(input("Oppgi grunnlinje i trapes: "))
+    b_input = float(input("Oppgi andre grunnlinje i trapes: "))
+    h_input = float(input("Oppgi høyde i trapes: "))
 
+    trapes_regning = a_input + b_input * h_input * 2
+
+    print(f"Svaret er {trapes_regning/2}cm^2")
 
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
-   
+def sirkel_areal():
+    r_input = float(input("Oppgi radius i sirkel: "))   
+
+    sirkel_regning = r_input
+
+    print(f"Svaret er {sirkel_regning}cm^2")
 
 # Programmet starter her
 ans="Start"
@@ -81,7 +82,6 @@ while ans != "8":
         clear()
         print("\nHer bergnes arealet av et kvadrat")
         venter=input("Trykk ENTER for å fortsette!")
-        kvadratareal()
         venter=input("Trykk ENTER for å fortsette!")
     elif ans=="2":
         clear()
@@ -98,17 +98,23 @@ while ans != "8":
     elif ans=="5":
         clear()
         print("\nHer bergnes arealet av en rombe")
+
         venter=input("Trykk ENTER for å fortsette!") 
         rombe_areal()
         venter=input("Trykk ENTER for å fortsette!") 
     elif ans=="6":
         clear()
         print("\nHer bergnes arealet av en trapes")
+
         venter=input("Trykk ENTER for å fortsette!")         
-        #trapes
+        trapes_areal()
+        venter=input("Trykk ENTER for å fortsette!") 
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
+
         venter=input("Trykk ENTER for å fortsette!") 
-        #sirkel
+        sirkel_areal()
+        venter=input("Trykk ENTER for å fortsette!") 
+
 print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")
