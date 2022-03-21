@@ -1,8 +1,5 @@
 import os
 
-import math as m
-# Funksjon for å tømme terminalen
-
 def clear():
     os.system('cls')
 
@@ -25,8 +22,6 @@ def skriv_meny():
 def kvadratareal(s):
     kvadratareal_regning = s * s
     return(kvadratareal_regning)
-
-    
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
@@ -88,6 +83,7 @@ def trapes_areal():
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
+
 def sirkel_areal():
     r_input = float(input("Oppgi radius i sirkel: "))   
 
@@ -135,13 +131,11 @@ while ans != "8":
     elif ans=="6":
         clear()
         print("\nHer bergnes arealet av en trapes")
-
         venter=input("Trykk ENTER for å fortsette!")         
-        trapes_areal()
-        venter=input("Trykk ENTER for å fortsette!") 
+        #trapes
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
         venter=input("Trykk ENTER for å fortsette!") 
         #sirkel
- print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")
+print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")
