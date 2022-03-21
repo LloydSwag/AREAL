@@ -1,6 +1,9 @@
 import os
+
 import math as m
 # Funksjon for å tømme terminalen
+=======
+
 def clear():
     os.system('cls')
 
@@ -44,6 +47,11 @@ def rektangelareal():
 def trekantareal():
     g_input = float(input("Oppgi lengde på trekant: "))
     h_input = float(input("Oppgi høyde på trekant: "))
+
+
+    trekantareal_regning = g_input * h_input
+
+=======
 
     trekantareal_regning = g_input * h_input
 
@@ -111,14 +119,20 @@ while ans != "8":
         clear()
         print("\nHer bergnes arealet av et rektangel")
         venter=input("Trykk ENTER for å fortsette!")
+        rektangelareal()
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="3":
         clear()
         print("\nHer bergnes arealet av en trekant")
         venter=input("Trykk ENTER for å fortsette!")
+        trekantareal()
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="4":
         clear()
         print("\nHer bergnes arealet av et parallellogram")
-        venter=input("Trykk ENTER for å fortsette!") 
+        venter=input("Trykk ENTER for å fortsette!")
+        parallellogramareal()
+        venter=input("Trykk ENTER for å fortsette!")
     elif ans=="5":
         clear()
         print("\nHer bergnes arealet av en rombe")
