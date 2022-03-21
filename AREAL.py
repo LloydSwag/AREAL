@@ -79,9 +79,10 @@ def trapes_areal():
     b_input = float(input("Oppgi andre grunnlinje i trapes: "))
     h_input = float(input("Oppgi høyde i trapes: "))
 
-    trapes_regning = a_input + b_input * h_input * 2
+    trapes_regning = a_input + b_input 
+    trapes_regning2 = trapes_regning * h_input 
 
-    print(f"Svaret er {trapes_regning/2}cm^2")
+    print(f"Svaret er {trapes_regning2/2}cm^2")
 
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
 # Funksjonen skal returnere arealet
@@ -90,7 +91,7 @@ def trapes_areal():
 def sirkel_areal():
     r_input = float(input("Oppgi radius i sirkel: "))   
 
-    sirkel_regning = r_input
+    sirkel_regning = r_input**2 * m.pi
 
     print(f"Svaret er {sirkel_regning}cm^2")
 
