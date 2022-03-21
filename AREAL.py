@@ -48,24 +48,21 @@ def trekantareal(g,h):
 # Funksjon for å beregne arealet av et parallellogram skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
-def parallellogramareal():
-    g_input = float(input("Oppgi lengde på parallellogram: "))
-    h_input = float(input("Oppgi høyde på parallellogram: "))
+def parallellogramareal(g,h):
+    
+    parallellogramareal_regning = g * h
+    return(parallellogramareal_regning)
 
-    parallellogramareal_regning = g_input * h_input
-
-    print(f"Svaret er {parallellogramareal_regning} cm2")
+    
 
 # Funksjon for å beregne arealet av en rombe skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
-def rombe_areal():
-    g_input = float(input("Oppgi grunnlinjen i romben"))
-    h_input = float(input("Oppgi høyden i romben"))
+def rombe_areal(g,h):
 
-    rombeareal_regning =  g_input * h_input
-
-    print(f"svaret er {rombeareal_regning}cm^2")
+    
+    rombeareal_regning =  g * h
+    return(rombeareal_regning)
 
 # Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
 # Funksjonen skal returnere arealet
@@ -127,16 +124,19 @@ while ans != "8":
     elif ans=="4":
         clear()
         print("\nHer bergnes arealet av et parallellogram")
-        venter=input("Trykk ENTER for å fortsette!")
-        parallellogramareal()
+        g_input = float(input("Oppgi lengde på parallellogram: "))
+        h_input = float(input("Oppgi høyde på parallellogram: "))
+
+        print(f"Svaret er: ", parallellogramareal(g_input,h_input))
         venter=input("Trykk ENTER for å fortsette!")
         
     elif ans=="5":
         clear()
         print("\nHer bergnes arealet av en rombe")
+        g_input = float(input("Oppgi grunnlinjen i romben"))
+        h_input = float(input("Oppgi høyden i romben"))
 
-        venter=input("Trykk ENTER for å fortsette!") 
-        rombe_areal()
+        print(f"Svaret er: ", rombe_areal(g_input,h_input))
         venter=input("Trykk ENTER for å fortsette!") 
 
     elif ans=="6":
