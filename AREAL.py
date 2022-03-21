@@ -1,8 +1,5 @@
 import os
 
-import math as m
-# Funksjon for å tømme terminalen
-
 def clear():
     os.system('cls')
 
@@ -22,12 +19,9 @@ def skriv_meny():
 # Funksjon for å beregne arealet av et kvadrat skrives her. Funsjonen skal ta imot et parameter (s)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
-def kvadratareal():
-    s_input = float(input("Oppgi side på kvadrat: "))
-
-    kvadratareal_regning = s_input * s_input
-
-    print(f"Svaret er {kvadratareal_regning} cm2")
+def kvadratareal(s):
+    kvadratareal_regning = s * s
+    return(kvadratareal_regning)
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
@@ -107,8 +101,8 @@ while ans != "8":
     if ans=="1":
         clear()
         print("\nHer bergnes arealet av et kvadrat")
-        venter=input("Trykk ENTER for å fortsette!")
-        kvadratareal()
+        s_input = float(input("Oppgi side på kvadrat: "))
+        print("Svaret er: ", kvadratareal(s_input))
         venter=input("Trykk ENTER for å fortsette!")
     elif ans=="2":
         clear()
@@ -137,15 +131,11 @@ while ans != "8":
     elif ans=="6":
         clear()
         print("\nHer bergnes arealet av en trapes")
-
         venter=input("Trykk ENTER for å fortsette!")         
-        trapes_areal()
-        venter=input("Trykk ENTER for å fortsette!") 
+        #trapes
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
         venter=input("Trykk ENTER for å fortsette!") 
-        sirkel_areal()
-        venter=input("Trykk ENTER for å fortsette!") 
-
+        #sirkel
 print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")
