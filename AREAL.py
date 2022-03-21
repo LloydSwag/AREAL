@@ -1,6 +1,5 @@
 import os
 
-# Funksjon for å tømme terminalen
 def clear():
     os.system('cls')
 
