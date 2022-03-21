@@ -20,33 +20,56 @@ def skriv_meny():
 # Funksjon for å beregne arealet av et kvadrat skrives her. Funsjonen skal ta imot et parameter (s)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def kvadratareal():
+    s_input = float(input("Oppgi side på kvadrat: "))
 
+    kvadratareal_regning = s_input * s_input
+
+    print(f"Svaret er {kvadratareal_regning} cm2")
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def rektangelareal():
+    g_input = float(input("Oppgi lengde på kvadrat: "))
+    h_input = float(input("Oppgi høyde på kvadrat: "))
 
+    rektangelareal_regning = g_input * h_input
+
+    print(f"Svaret er {rektangelareal_regning} cm2")
 
 # Funksjon for å beregne arealet av en trekant skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def trekantareal():
+    g_input = float(input("Oppgi lengde på trekant: "))
+    h_input = float(input("Oppgi høyde på trekant: "))
 
+    trekantareal_regning = g_input * h_input
+
+    print(f"Svaret er {trekantareal_regning/2} cm2")
 
 # Funksjon for å beregne arealet av et parallellogram skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+def parallellogramareal():
+    g_input = float(input("Oppgi lengde på parallellogram: "))
+    h_input = float(input("Oppgi høyde på parallellogram: "))
 
+    parallellogramareal_regning = g_input * h_input
+
+    print(f"Svaret er {parallellogramareal_regning} cm2")
 
 # Funksjon for å beregne arealet av en rombe skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 def rombe_areal():
-    g_input = float(input("Oppgi grunnlinje i romben: "))
-    h_input = float(input("Oppgi høyde i romben: "))
+    g_input = float(input("Oppgi grunnlinjen i romben"))
+    h_input = float(input("Oppgi høyden i romben"))
 
     rombeareal_regning =  g_input * h_input
 
-    print(f"Svaret er {rombeareal_regning}cm^2")
+    print(f"svaret er {rombeareal_regning}cm^2")
 
 # Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
 # Funksjonen skal returnere arealet
