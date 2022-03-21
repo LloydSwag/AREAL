@@ -1,8 +1,5 @@
 import os
 
-import math as m
-# Funksjon for å tømme terminalen
-
 def clear():
     os.system('cls')
 
@@ -22,12 +19,11 @@ def skriv_meny():
 # Funksjon for å beregne arealet av et kvadrat skrives her. Funsjonen skal ta imot et parameter (s)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
-def kvadratareal():
-    s_input = float(input("Oppgi side på kvadrat: "))
+def kvadratareal(s):
+    kvadratareal_regning = s * s
+    return(kvadratareal_regning)
 
-    kvadratareal_regning = s_input * s_input
-
-    print(f"Svaret er {kvadratareal_regning} cm2")
+    
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
@@ -76,26 +72,13 @@ def rombe_areal():
 # Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
-def trapes_areal():
-    a_input = float(input("Oppgi grunnlinje i trapes: "))
-    b_input = float(input("Oppgi andre grunnlinje i trapes: "))
-    h_input = float(input("Oppgi høyde i trapes: "))
 
-    trapes_regning = a_input + b_input 
-    trapes_regning2 = trapes_regning * h_input 
-
-    print(f"Svaret er {trapes_regning2/2}cm^2")
 
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
-def sirkel_areal():
-    r_input = float(input("Oppgi radius i sirkel: "))   
-
-    sirkel_regning = r_input**2 * m.pi
-
-    print(f"Svaret er {sirkel_regning}cm^2")
+   
 
 # Programmet starter her
 ans="Start"
@@ -107,8 +90,8 @@ while ans != "8":
     if ans=="1":
         clear()
         print("\nHer bergnes arealet av et kvadrat")
-        venter=input("Trykk ENTER for å fortsette!")
-        kvadratareal()
+        s_input = float(input("Oppgi side på kvadrat: "))
+        print("Svaret er: ", kvadratareal(s_input))
         venter=input("Trykk ENTER for å fortsette!")
     elif ans=="2":
         clear()
@@ -137,15 +120,11 @@ while ans != "8":
     elif ans=="6":
         clear()
         print("\nHer bergnes arealet av en trapes")
-
         venter=input("Trykk ENTER for å fortsette!")         
-        trapes_areal()
-        venter=input("Trykk ENTER for å fortsette!") 
+        #trapes
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
         venter=input("Trykk ENTER for å fortsette!") 
-        sirkel_areal()
-        venter=input("Trykk ENTER for å fortsette!") 
-
+        #sirkel
 print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")
